@@ -1,0 +1,8 @@
+digits/
+data/
+caffemodel/
+
+#pyc files
+*.pyc
+
+
