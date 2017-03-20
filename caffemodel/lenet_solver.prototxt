@@ -1,0 +1,16 @@
+train_net: "./caffemodel/lenet_train.prototxt"
+test_net: "./caffemodel/lenet_val.prototxt"
+test_iter: 100
+test_interval: 500
+base_lr: 0.01
+display: 100
+max_iter: 10000
+lr_policy: "inv"
+gamma: 0.0001
+power: 0.75
+momentum: 0.9
+weight_decay: 0.0005
+snapshot: 20
+snapshot_prefix: "./caffemodel/lenet"
+solver_mode: GPU
+random_seed: 831486
