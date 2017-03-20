@@ -1,17 +1,14 @@
 README.md (Shaivi Kochar)
 
-○ Describe the steps in your pipeline, what choices did you take and why
+- Describe the steps in your pipeline, what choices did you take and why
 
-○ The layers in your model, why did you pick them
+- The layers in your model, why did you pick them
 
-○ What performance are you currently seeing, why is that
+- What performance are you currently seeing, why is that
 
-○ How to train your system (preferably just running one or two files)
+- How to train your system (preferably just running one or two files)
 
-○ How to run your system (preferably just running one or two files)
-
-
-In Response:
+- How to run your system (preferably just running one or two files)
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 PIPELINE
@@ -80,14 +77,14 @@ Training, Validation and Testing through Deep Learning enhances the prediction. 
 PERFORMANCE
 ----------------------------------------------------------------------------------------------------------------------------------------
 1. Generation of Validation Dataset: 
-	1.1 Considering noises like Rotation and Skewness of the Equation in the image, I am able to augment a clean, deskew data.  
-	1.2 Segmenting of Individual Digits or Operator from the Equation is not generating good results bacause of the two reasons:
-		1.2.1. Since, we need to maintain the sequence of the subparts in the equation, Opencv technique to detect contours may not line in a sqeuence. Though, it was able to detect most of them.
-		1.2.2. My technique to segment the subparts is able to preserave the sequence and its Prediction can easily be traced from Intermediate Model.
+	- Considering noises like Rotation and Skewness of the Equation in the image, I am able to augment a clean, deskew data.  
+	- Segmenting of Individual Digits or Operator from the Equation is not generating good results bacause of the two reasons:
+		- Since, we need to maintain the sequence of the subparts in the equation, Opencv technique to detect contours may not line in a sqeuence. Though, it was able to detect most of them.
+		- My technique to segment the subparts is able to preserave the sequence and its Prediction can easily be traced from Intermediate Model.
 2. Intermediate Model Performance:
-	1.1 Accuracy
+	- Accuracy
 3. Final Model Performace:
-	1.1 It is dependent on the Intermediate Model Prediction, in itself it is relient to generate correct results.
+	- It is dependent on the Intermediate Model Prediction, in itself it is relient to generate correct results.
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 ASSUMPTIONS
