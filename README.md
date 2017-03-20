@@ -13,9 +13,9 @@ README.md (Shaivi Kochar)
 
 In Response:
 
--------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 PIPELINE
--------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 1. Firstly, I have manually colleced dataset of Mathematical Operators {'+', '-', '*', 'x'}that are missing in the dataset.
 The dataset have similar specifications as MNIST dataset : GRAYSCALED Image with shape (28,28)
 
@@ -39,39 +39,39 @@ The dataset have similar specifications as MNIST dataset : GRAYSCALED Image with
 
 6. Generating the Prediction and Accuracy of Intermediate model and Final Model to depict the strength of the system.
 
------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 FUNTIONS DEFINATION
------------------------------------------------------------------------------------------------------------------------------------------
-|-model.py ************************* (Main File to Run the System) *********************************
-|-opencvutils.py ******************* (Preprocessing OpenCV Funtions) *******************************
-|-lenetcaffe.py ******************** (Caffe Model / Intermediate Model) ****************************
-|-evaluation.py ******************** ( AST Model / Final Model) ************************************
-|-caffemodel
-	|-lenet_train.prototxt ********* (Network Layer Parameters) ************************************
-	|-lenet_deploy.prototxt ******** (Testing Parameters) ******************************************
-	|-lenet_solver.prototxt ******** (Training and Validation Parameters for Stochastic Gradient)***
-|-data
-	|-hdf5
-		|-mnist_train_data.hdf5 **** (HDF5 Training Dataset) ***************************************
-		|-mnist_val_data.hdf5 ****** (HDF5 Validation Dataset) *************************************
-		|-train.txt **************** (Train file to Network Layer for Data Tracking) ***************
-		|-val.txt ****************** (Val file to Network Layer for Data Tracking) *****************
-|-dataset
-	|-{Raw Validation Image dataset}
-	|-data.csv
-|-augumented
-	|-{Manually generated Arithmatic Operators Image Dataset}
-|-digits
-	|-{Specific Folder for Equation / Equation Wise folders}
-|-mldata
-	|-mnist-original.mat *********** (.Mat file of the MNIST data from mldata repo) ****************
-|-README.md
-|-requirements.txt
+----------------------------------------------------------------------------------------------------------------------------------------
+|-model.py  (Main File to Run the System) <br />
+|-opencvutils.py  (Preprocessing OpenCV Funtions) <br />
+|-lenetcaffe.py  (Caffe Model / Intermediate Model) <br />
+|-evaluation.py  ( AST Model / Final Model) <br />
+|-caffemodel <br />
+.......	|-lenet_train.prototxt  (Network Layer Parameters) <br />
+.......	|-lenet_deploy.prototxt  (Testing Parameters) <br />
+.......	|-lenet_solver.prototxt  (Training and Validation Parameters for Stochastic Gradient) <br />
+|-data <br />
+.......	|-hdf5 <br />
+...............	|-mnist_train_data.hdf5  (HDF5 Training Dataset) <br />
+...............	|-mnist_val_data.hdf5  (HDF5 Validation Dataset) <br />
+...............	|-train.txt  (Train file to Network Layer for Data Tracking) <br />
+...............	|-val.txt  (Val file to Network Layer for Data Tracking) <br />
+|-dataset <br />
+.......	|-{Raw Validation Image dataset} <br />
+.......	|-data.csv <br />
+|-augumented <br />
+.......	|-{Manually generated Arithmatic Operators Image Dataset} <br />
+|-digits <br />
+.......	|-{Specific Folder for Equation / Equation Wise folders} <br />
+|-mldata <br />
+.......	|-mnist-original.mat  (.Mat file of the MNIST data from mldata repo) <br />
+|-README.md <br />
+|-requirements.txt <br />
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 LAYERS IN THE INTERMEDIATE MODEL
-----------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------
 I thought of Augumenting my own data for Operators because of scarcity of desirable dataset. 
 Preprocessing is required to extract the essential parts of the dataset as we have MNIST dataset for digits only. 
 Training, Validation and Testing through Deep Learning enhances the prediction. Also, I am using the same Layer Architechute as MNIST solely to compare the Accuracy and Prediction over the MNIST. The combine result of all subparts is fed to Final Model to evalue the equation generating a better chances 
@@ -100,5 +100,5 @@ ASSUMPTIONS
 HOW TO RUN
 ----------------------------------------------------------------------------------------------------------------------------------------
 1. Please paste dataset into the respective folder.
-2. Change the root dir path in model.py to desired location.
-3. Run: python model.py to run the system
+2. Change the root dir path in `model.py` to desired location.
+3. Run: `python model.py` to run the system
