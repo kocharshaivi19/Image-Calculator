@@ -47,24 +47,24 @@ FUNTIONS DEFINATION
 |-lenetcaffe.py  (Caffe Model / Intermediate Model) <br />
 |-evaluation.py  ( AST Model / Final Model) <br />
 |-caffemodel <br />
-	|-lenet_train.prototxt  (Network Layer Parameters) <br />
-.......	|-lenet_deploy.prototxt  (Testing Parameters) <br />
-.......	|-lenet_solver.prototxt  (Training and Validation Parameters for Stochastic Gradient) <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  |-lenet_train.prototxt  (Network Layer Parameters) <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	|-lenet_deploy.prototxt  (Testing Parameters) <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	|-lenet_solver.prototxt  (Training and Validation Parameters for Stochastic Gradient) <br />
 |-data <br />
-.......	|-hdf5 <br />
-...............	|-mnist_train_data.hdf5  (HDF5 Training Dataset) <br />
-...............	|-mnist_val_data.hdf5  (HDF5 Validation Dataset) <br />
-...............	|-train.txt  (Train file to Network Layer for Data Tracking) <br />
-...............	|-val.txt  (Val file to Network Layer for Data Tracking) <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	|-hdf5 <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	|-mnist_train_data.hdf5  (HDF5 Training Dataset) <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	|-mnist_val_data.hdf5  (HDF5 Validation Dataset) <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	|-train.txt  (Train file to Network Layer for Data Tracking) <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	|-val.txt  (Val file to Network Layer for Data Tracking) <br />
 |-dataset <br />
-.......	|-{Raw Validation Image dataset} <br />
-.......	|-data.csv <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	|-{Raw Validation Image dataset} <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	|-data.csv <br />
 |-augumented <br />
-.......	|-{Manually generated Arithmatic Operators Image Dataset} <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	|-{Manually generated Arithmatic Operators Image Dataset} <br />
 |-digits <br />
-.......	|-{Specific Folder for Equation / Equation Wise folders} <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	|-{Specific Folder for Equation / Equation Wise folders} <br />
 |-mldata <br />
-.......	|-mnist-original.mat  (.Mat file of the MNIST data from mldata repo) <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	|-mnist-original.mat  (.Mat file of the MNIST data from mldata repo) <br />
 |-README.md <br />
 |-requirements.txt <br />
 
