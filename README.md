@@ -47,7 +47,7 @@ FUNTIONS DEFINATION
 |-lenetcaffe.py  (Caffe Model / Intermediate Model) <br />
 |-evaluation.py  ( AST Model / Final Model) <br />
 |-caffemodel <br />
-.......	|-lenet_train.prototxt  (Network Layer Parameters) <br />
+	|-lenet_train.prototxt  (Network Layer Parameters) <br />
 .......	|-lenet_deploy.prototxt  (Testing Parameters) <br />
 .......	|-lenet_solver.prototxt  (Training and Validation Parameters for Stochastic Gradient) <br />
 |-data <br />
